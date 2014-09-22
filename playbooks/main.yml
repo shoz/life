@@ -1,0 +1,8 @@
+- hosts: vagrant
+  sudo: true
+  user: vagrant
+  vars:
+    DEAP_VERSION: 1.0.1
+  tasks:
+    - name: install Deap
+      pip: name=deap version={{ DEAP_VERSION }}
